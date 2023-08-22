@@ -1,8 +1,10 @@
-#include <stdio.h>
+#include <GLFW/glfw3.h>
+#include <vulkan/vulkan.h>
+#include <iostream>
 
-int main(int argc, const char** argv)
+int main()
 {
-    printf("Hello world");
+    std::cout << "Hello world" << std::endl;
 
     return 0;
 }
