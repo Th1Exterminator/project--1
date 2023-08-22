@@ -4,7 +4,8 @@
             "name": "Win32",
             "includePath": [
                 "${workspaceFolder}/**",
-                "${GLFW}/include"
+                "${GLFW}/include",
+                "${VK_SDK_PATH}/Include"
             ],
             "defines": [
                 "_DEBUG",
