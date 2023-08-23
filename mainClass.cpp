@@ -16,14 +16,14 @@ vWindow::vWindow(int _width, int _height, const char* _windowName) : vWidth(_wid
 
 bool vWindow::vInit(int _width, int _height, const char* _windowName)
 {
-    glfwWindowHint(GLFW_CLIENT_API, GLFW_NO_API);
-    glfwWindowHint(GLFW_RESIZABLE, GLFW_FALSE);
-    mWindow = glfwCreateWindow(_width, _height, _windowName, nullptr, nullptr);
+    glfwWindowHint(GLFW_CLIENT_API, GLFW_NO_API); // Detaches glfw from OpenGL
+    glfwWindowHint(GLFW_RESIZABLE, GLFW_FALSE); // Prevents glfw from handeling resizing
+    mWindow = glfwCreateWindow(_width, _height, _windowName, nullptr, nullptr); // Handles cross-platform window creation
 }
 
 bool vWindow::vLoop()
 {
-    while (glfwWindowShouldClose(mWindow))
+    while (glfwWindowShouldClose(mWindow)) // Check for closing event
     {
         glfwPollEvents();
     }
@@ -31,6 +31,6 @@ bool vWindow::vLoop()
 
 bool vWindow::vClean()
 {
-    glfwDestroyWindow(mWindow);
-    glfwTerminate();
+    glfwDestroyWindow(mWindow); // Handles window distruction
+    glfwTerminate(); // Halts glfw operation
 }
