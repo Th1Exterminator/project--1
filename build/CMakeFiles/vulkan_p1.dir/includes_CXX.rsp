@@ -1,1 +1,1 @@
--I/Include -I/include
+-ID:/sdk/Vulkan/Include -I"D:/sdk/glfw-3.3.7/include"

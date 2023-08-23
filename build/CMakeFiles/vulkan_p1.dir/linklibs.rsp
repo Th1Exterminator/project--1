@@ -1,1 +1,1 @@
-  -L/Lib  -L/lib  -lvulkan-1 -lglfw3 -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+  -LD:/sdk/Vulkan/Lib  -L"D:/sdk/glfw-3.3.7/lib"  -lvulkan-1 -lglfw3 -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

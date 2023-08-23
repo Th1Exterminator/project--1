@@ -3,13 +3,13 @@ project(vulkan_p1 C CXX)
 add_executable(${PROJECT_NAME} main.cpp)
 target_include_directories(
     ${PROJECT_NAME} PUBLIC
-    "${VULKAN_SDK}/Include"
-    "${GLFW}/include"
+    "D:/sdk/Vulkan/Include"
+    "D:/sdk/glfw-3.3.7/include"
     )
 target_link_directories(
     ${PROJECT_NAME} PUBLIC
-    "${VULKAN_SDK}/Lib"
-    "${GLFW}/lib"
+    "D:/sdk/Vulkan/Lib"
+    "D:/sdk/glfw-3.3.7/lib"
     )
 target_link_libraries(
     ${PROJECT_NAME} PUBLIC
