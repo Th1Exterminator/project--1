@@ -3,7 +3,7 @@
 
 int main()
 {
-    std::cout << "Hello world" << std::endl;
+    vWindow* _window = new vWindow;
 
     return 0;
 }

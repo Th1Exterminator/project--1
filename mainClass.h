@@ -7,6 +7,7 @@
 class vWindow
 {
 public:
+    vWindow();
     vWindow(int _height, int _width, const char* _windowName);
 private:
     bool vInit(int _height, int _width, const char* _windowName); 
